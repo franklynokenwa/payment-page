@@ -1,0 +1,22 @@
+header{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3rem;
+}
+
+.header_links{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 25rem;
+    position: relative;
+    top: 1.5rem;
+
+
+    a{
+        text-decoration: none;
+        color: rgb(107,112,127);
+    }
+}
+img{
+    margin-left: 2rem;
+}
