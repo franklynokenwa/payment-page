@@ -1,7 +1,19 @@
-section{
+.section{
     width: 30rem;
-    
+    font-weight: 700;
 
+    .paymentTitle{
+        font-size: 25px;
+    }
+    .paymentText{
+        color: rgb(195,199,207);
+        margin-bottom: 2rem;
+        margin-top: -0.5rem;
+    }
+    
+    .cardNumber{
+        width: 20rem;
+    }
     .creditCardImages{
         width: 10rem;
         display: flex;
@@ -21,11 +33,11 @@ section{
 }
 
 .creditCard{
-    background-color: yellowgreen;
+    background: linear-gradient(70DEG, rgb(213,87,77), rgb(103,99,192));
     border-radius: 10px;
     padding-top: 1rem;
     padding-bottom: 1rem;
-
+    color: white;
 
     h2,p{
         margin-left: 3rem;
@@ -36,5 +48,36 @@ section{
     }
     .mastercardLogo{
         margin-right: 4rem;
+    }
+    
+}
+
+
+@media screen and (max-width: 500px) {
+    .creditCard{
+        width: 80%;
+    
+        .mastercardLogo{
+            width: 5rem;
+            height: 3rem;
+        }
+       
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .creditCard{
+        width: 70%;       
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .creditCard{
+        width: 60%;       
+    }
+}
+@media screen and (max-width: 320px) {
+    .creditCard{
+        width: 50%;       
     }
 }

@@ -112,7 +112,7 @@ const AddCreditCard = () => {
             </div>
             <div className={AddCreditCardStyles.logoContainer2}>
                 <div className={AddCreditCardStyles.circle}></div>
-                <img src={payPal} alt="pay pal logo" />     
+                <img src={payPal} alt="pay pal logo" />      
             </div> 
         </div>
         <form onSubmit={submitForm}>
@@ -176,7 +176,7 @@ const AddCreditCard = () => {
                     checked={formData.isChecked}
                     onChange={handleChange}
                 />
-                <label htmlFor="isChecked">Use this card for next time purchase</label>
+                <label className={AddCreditCardStyles.checkboxLabel} htmlFor="isChecked">Use this card for next time purchase</label>
             </div>
             <button>Add Card</button>
             

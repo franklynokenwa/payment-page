@@ -6,20 +6,20 @@ const PaymentSummary = () => {
     <section className={paymentSummaryStyle.container}>
         <div>
             <p>Subtotal</p>
-            <p>#2,497.00</p>
+            <p>₦2,497.00</p>
         </div>
         <div>
             <p>Estimated TAX</p>
-            <p>#119.64</p>
+            <p>₦119.64</p>
         </div>
         <div>
-            <p>Promotional ode: <span>Z4KXLM9A</span></p>
-            <p>-#60.00</p>
+            <p>Promotional Code: <span>Z4KXLM9A</span></p>
+            <p>₦-60.00</p>
         </div>
         <hr/>
         <div className={paymentSummaryStyle.paymentCompletion}>
             <button className={paymentSummaryStyle.paymentCompletionButton}>Complete payment</button>
-            <p>TOTAL: #2556.64</p>
+            <p className={paymentSummaryStyle.total}>TOTAL: ₦2556.64</p>
         </div>
     </section>
   )

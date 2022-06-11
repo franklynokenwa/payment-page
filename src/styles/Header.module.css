@@ -7,15 +7,34 @@ header {
 .header_links {
   display: flex;
   justify-content: space-between;
-  flex-basis: 25rem;
+  flex-basis: 30rem;
   position: relative;
   top: 1.5rem;
 }
 .header_links a {
   text-decoration: none;
-  color: rgb(107, 112, 127);
+  color: rgb(70, 75, 95);
+  font-size: 22px;
+  font-weight: bolder;
 }
 
 img {
   margin-left: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    justify-content: center;
+  }
+
+  .header_links {
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 30rem;
+  }
+
+  img {
+    width: 5rem;
+    height: 5rem;
+  }
 }/*# sourceMappingURL=Header.module.css.map */

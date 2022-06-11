@@ -1,5 +1,11 @@
 .container{
     width: 100%;
+    font-weight: bold;
+    color: rgb(55,55,55);
+
+    span{
+        color: rgb(196,200,207);
+    }
     div{
         display: flex;
         justify-content: space-between;
@@ -15,6 +21,36 @@
         margin-top: 0;
         font-size: 1rem;
         font-weight: bold;
+        background-color: rgb(63,103,233);
+    }
+    .total{
+        font-weight: 700;
+        font-size: 24px;
+        color: black;
     }
 }
 
+
+@media screen and (max-width: 500px) {
+    .paymentCompletion{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .creditCard{
+        width: 70%;       
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .creditCard{
+        width: 60%;       
+    }
+}
+@media screen and (max-width: 320px) {
+    .creditCard{
+        width: 50%;       
+    }
+}

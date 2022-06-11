@@ -15,4 +15,10 @@
 
 .paymentSummaryDivider {
   margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .paymentInformation {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=App.module.css.map */

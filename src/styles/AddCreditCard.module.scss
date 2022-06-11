@@ -18,10 +18,10 @@
     height: 1.5rem;
     margin-top: 0.5rem;
     border-radius: 100%;
-    background-color: gray;
+    background-color: rgb(241,242,243);
 }
 form{
-    padding-top: 2.5rem;
+    padding-top: 2.7rem;
 }
 .formDetails{
     display: flex;
@@ -30,42 +30,137 @@ form{
     input{
         width: 15rem;
         height: 3rem;
-        background-color: gainsboro;
+        background-color: rgb(239,240,242);
         padding-left: 1rem;
         border: none;
-        outline: solid grey;
+        outline: solid 1.9px rgb(212,215,218);
         border-radius: 5px;
+        color: rgb(55,55,55);
     }
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-    }
+    
+    
+}
 
-    /* Firefox */
-    input[type=number] {
-      -moz-appearance: textfield;
-    }
-    
+.checkbox{   
+    // clip-path: circle(46% at 50% 50%);
+    margin-top: 1rem;  
+    -webkit-appearance:none;
+    width:15px;
+    height:15px;
+    border:2px solid blue;
+    border-radius:50%;
+    outline:none;
+    box-shadow:0 0 3px 2px blue inset;  
+    background: black;
 }
-.formDetailsContainer2{
-    
+.checkbox:checked {
+    background:white;
 }
-.checkbox{
-    
-    clip-path: circle(46% at 50% 50%);
-    margin-top: 1rem;
+.checkboxLabel{
+    margin-left:10px;
+    position: relative;
+    top: -0.25rem;
 }
+
 button{
     width: 35rem;
     height: 3.5rem;
-    background-color: blue;
+    background-color: rgb(63,103,233);
     color: white;
     border-radius: 5px;
     margin-top: 3rem;
     border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(88, 120, 224);
+    filter: drop-shadow(0px 1px 3px rgba(63,103,233,0.78));
+    transform: translate(0px,-2px);
+    box-shadow: 7px 18px 19px -13px rgba(63,103,233,0.76);
+    -webkit-box-shadow: 7px 18px 19px -13px rgba(63,103,233,0.76);
+    -moz-box-shadow: 7px 18px 19px -13px rgba(63,103,233,0.76);
+    transition: 1s ease-in-out;
 }
 
 .error{
     color: red;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container{
+        margin-top: 5rem;
+    }
+    .logos{
+        justify-content: flex-start;
+        
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container{
+        margin-top: 5rem;
+    }
+    .logos{
+        margin-left: -2.5rem; 
+        width: 28rem;
+        
+        img{
+            width: 3.5rem;
+        }
+    }
+    .formDetails{
+        flex-direction: column;
+        input{
+            width: 23rem;
+        }
+    }
+    button{
+        width: 24rem;
+    }
+        
+}
+
+@media screen and (max-width: 425px) {
+    .logos{
+        img{
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+    }
+    .formDetails{
+        input{
+            width: 18rem;
+        }
+        
+    }   
+    button{
+        width: 19rem;
+    }
+
+
+}
+
+@media screen and (max-width: 320px) {
+    .logos{
+        margin-left: -2.5rem; 
+        width: 17rem;
+        
+        img{
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
+    .formDetails{
+        input{
+            width: 14rem;
+        }
+    }
+    button{
+        width: 16rem;
+    }
+    .checkboxLabel{
+        font-size: 12px;
+    }
 }
