@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+}
+.container div {
+  display: flex;
+  justify-content: space-between;
+}
+.container hr {
+  margin-top: 4rem;
+}
+.container .paymentCompletion {
+  margin-top: 2rem;
+}
+.container .paymentCompletionButton {
+  width: 13rem;
+  margin-top: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}/*# sourceMappingURL=PaymentSummary.module.css.map */

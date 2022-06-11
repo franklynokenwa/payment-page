@@ -1,0 +1,20 @@
+.container{
+    width: 100%;
+    div{
+        display: flex;
+        justify-content: space-between;
+    }
+    hr{
+        margin-top: 4rem;
+    }
+    .paymentCompletion{
+        margin-top: 2rem;
+    }
+    .paymentCompletionButton{
+        width: 13rem;
+        margin-top: 0;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}
+

@@ -63,4 +63,8 @@ button {
   border-radius: 5px;
   margin-top: 3rem;
   border: none;
+}
+
+.error {
+  color: red;
 }/*# sourceMappingURL=AddCreditCard.module.css.map */
