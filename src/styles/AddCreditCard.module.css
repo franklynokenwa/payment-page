@@ -29,6 +29,7 @@ form {
 .formDetails {
   display: flex;
   justify-content: space-between;
+  /* Firefox */
 }
 .formDetails input {
   width: 15rem;
@@ -39,6 +40,14 @@ form {
   outline: solid 1.9px rgb(212, 215, 218);
   border-radius: 5px;
   color: rgb(55, 55, 55);
+}
+.formDetails input::-webkit-outer-spin-button,
+.formDetails input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.formDetails input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .checkbox {
