@@ -16,7 +16,7 @@ This is a simple check out page with form validation built with React and Sass (
 ![](./public/paymentPage.PNG)
 
 ### Link
-- Live Site URL: (https://payment-page-seven.vercel.app/)
+- Live Site URL: (https://payment-page-franklynwisdom.vercel.app/)
 
 ### Built with
 
